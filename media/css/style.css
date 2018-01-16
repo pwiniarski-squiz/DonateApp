@@ -1,0 +1,747 @@
+body {
+	margin: 0 auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	font-size: 75%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 32px;
+	font-size: 2rem;
+	color: #a80c1e;
+	margin-bottom: 4px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],span.bordered {
+    box-sizing : border-box;
+}
+
+
+#credit-card input::-moz-placeholder { /* Firefox 19+ */
+  opacity: 1;
+  color: #bbbbbb;
+}
+
+#credit-card input:-moz-placeholder { /* Firefox 18- */
+  opacity: 1;
+  color: #bbbbbb;
+}
+
+#credit-card input:-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bbbbbb;
+}
+
+#credit-card input::-ms-input-placeholder { /* IE 10+ */
+  color: #bbbbbb;
+}
+
+#filled {
+	position: absolute;
+	bottom: 41px;
+	left: 45px;
+	width: 35px;
+	height: 22px;
+	line-height: 22px;
+}
+
+#main-wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+#header {
+	position: relative;
+}
+
+#mobile-menu {
+	display: none;
+	top: 70px;
+	position: absolute;
+	right: 60px;
+}
+
+#mobile-menu button {
+	cursor: pointer;
+}
+
+#mobile-menu i {
+	font-size: 20px;
+	font-size: 1.25rem;
+	color: #a80c1e;
+}
+
+#top-bar {
+	height: 39px;
+	background-color: #fff;
+}
+
+#search-block {
+	float: right;
+	background-color: #a80c1e;
+}
+
+#search-form {
+	padding: 4px 6px 4px 12px;
+	max-width: 262px;
+	display: none;
+	vertical-align: middle;
+}
+
+#search-form input {
+	width: 246px;
+	height: 30px;
+	background-color: #8e0314;
+	padding: 7px 0 8px 15px;
+	font-size: 15px;
+	font-size: .9375rem;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	-webkit-box-shadow: -1px 1px 0px 0px rgba(226,101,104,1);
+-moz-box-shadow: -1px 1px 0px 0px rgba(226,101,104,1);
+box-shadow: -1px 1px 0px 0px rgba(226,101,104,1);
+}
+
+#search {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#search button {
+	border: none;
+	padding: 7px 15px 6px;
+	background-color: #a80c1e;
+	width: 56px;
+	height: 39px;
+}
+
+#search button:hover {
+	cursor: pointer;
+}
+
+#low-bar {
+	background-color: #e8e8e8;
+	padding: 40px 27px 14px 0;
+}
+
+#logo {
+	position: absolute;
+	top: 16px;
+	left: 27px;
+}
+
+#logo img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+nav {
+	margin: 0 auto;
+}
+
+#menu {
+	/*padding: 38px 0 19px 147px;*/
+	padding-left: 147px;
+}
+
+#menu li {
+	display: inline-block;
+	padding: 0 22px;
+}
+
+#menu li a {
+	padding: 5px;
+	font-size: 16px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+#cart {
+	position: absolute;
+	right: 0px;
+	top: 68px;
+	cursor: pointer;
+}
+
+#cart:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 38px;
+	border-left: 1px solid #cccccc;
+}
+#cart:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 1px;
+	height: 38px;
+	border-left: 1px solid #fff;
+}
+
+#cart img {
+	padding: 8px 17px 8px 14px;
+}
+
+/* content begin */
+#content {
+	/*padding: 42px 189px 56px 142px;*/
+	padding: 42px 0 56px 0;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#content fieldset {
+	border: 0;
+	padding: 0;
+}
+
+#content p.first {
+	margin: 0 0 44px 4px;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+#content p.first span {
+	color: #af2f3a;
+}
+
+#meter { 
+	height: 40px;  /* Can be anything */
+	max-width: 654px;
+	position: relative;
+	background: #f9f9f9;
+	/*-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	box-shadow: -1px -2px 1px #bababa;*/
+	margin-bottom: 28px;
+}
+
+#progress {
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	border: none;
+	border-radius: 25px;
+	overflow: hidden
+}
+
+#progress-bar {
+	position: absolute;
+	height: 38px;
+	border: none;
+	border-radius: 25px;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#f82b39 49%,#ae0d15 51%); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f82b39 49%,#ae0d15 51%); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f82b39 49%,#ae0d15 51%); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f82b39 49%,#ae0d15 51%); /* Standard syntax */
+	z-index: 1;
+}
+
+#meter input {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+	box-shadow: -1px -1px 1px #bababa;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    margin: 0;
+	position: relative;
+	padding: 0;
+	border: 1px solid #dddddd;
+}
+
+input[type=range]:focus {
+  outline: none;
+  -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type=range]::-moz-range-track {
+	height: 0;
+}
+
+input[type=range]::-moz-range-thumb {
+	/*position: absolute;
+	bottom: 0;	
+    border-right: 20px solid transparent; 
+    border-top: 20px solid #eeeeee; 
+    border-left: 20px solid transparent;
+	border-bottom: 0px;
+	box-shadow: 0;
+	background: none;*/
+	width: 40px;
+	height: 40px;
+	border-radius: 0px;
+	border: 0 none;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+	width: 40px;
+	height: 40px;
+	border-radius: 0px;
+	border: 0 none;
+	background: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 0px;
+    border: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+
+/* IE filters for input range*/
+
+input[type=range]::-ms-track {
+/*example */
+height: 0;
+background: transparent;
+border-color: transparent;
+color: transparent;
+
+width: 100%;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-upper {
+background: #f82b39;
+border-radius: 6px;
+}
+input[type=range]::-ms-fill-lower {
+background: #ae0d15;
+border-radius: 6px;
+}
+
+input[type=range]::-ms-thumb {
+	position: absolute;
+	bottom: 0;	
+    width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #eeeeee;
+	background: none;
+}
+
+
+#volume {
+	position: absolute;
+	left: 0%;
+	height: 54px;
+	width: 44px;
+	background-color: rgb(238, 238, 238);
+	top: -27px;
+	text-align: center;
+	padding-left: 2px;
+	padding-top: 2px;
+	color: #b2434c;
+	font-size: 1.125rem;
+	font-size: 18px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	z-index: 1;
+}
+
+#volume:hover {
+	cursor: pointer;
+}
+
+#volume:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-right: 23px solid transparent;
+	border-top: 16px solid #eeeeee;
+	border-left: 23px solid transparent;
+	bottom: -13px;
+	left: 0%;
+	border-radius: 10px;
+}
+
+#donate-form {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+#donate-form input[type=checkbox] {
+	border: 1px ridge #979797;
+	border-radius: 5px;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+#donate-form input.error {
+	border-color: #a80c1e;
+}
+
+#donate-form >span.bordered {
+	margin-left: 8px;
+}
+
+#donate-form p {
+	margin: 7px 0 0 0;
+	font-size: 14px;
+	font-size: .875rem;
+}
+
+#donate-form p.error {
+	color: #a80c1e;
+	visibility: hidden;
+}
+
+#personal-data {
+	margin-top: 44px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	position: relative;
+	display: none;
+}
+
+#personal-data:before {
+	content: '';
+	position: absolute;
+	top: -16px;
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #dddddd;	
+}
+
+#personal-data:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #dddddd;
+}
+
+#personal-data .bordered, #credit-card .bordered {
+	padding: 1px 7px;
+	border: 1px solid black;
+	margin-right: 7px;
+}
+
+#personal-data > div.form-group{
+	margin-top: 28px;
+	display: table;
+	width: 100%;
+}
+
+div.form-group div.form-el {
+	display: table-cell;
+	width: 48.5%;
+}
+
+div.form-group div.form-el:first-child {
+	padding-right: 15px;
+} 
+
+div.form-group div.form-el label {
+	display: block;
+	margin-bottom: 12px;
+}
+
+#credit-card {
+	margin-top: 14px;
+	display: none;
+	position: relative;
+}
+
+div.form-group div.form-el input {
+	width: 100%;
+	padding: 16px 0 22px 17px;
+	border: 1px solid #bbbbbb;
+	border-radius: 10px;
+}
+
+#credit-card input {
+	display: block;
+	margin-top: 24px;
+	width: 100%;
+	padding: 15px 0 15px 44px;
+	border: 1px solid #bbbbbb;
+	border-radius: 10px;
+	font-family: "Source Sans Pro",sans-serif;
+	background: url(../images/card.jpg) 9px center no-repeat;
+}
+
+#credit-card input.success {
+	border-color: #009b00;
+}
+
+#credit-card p.success {
+	color: #5dbb79;
+}
+
+#credit-card p {
+	font-size: 14px;
+	font-size: .875rem;
+	margin-top: 6px;
+}
+
+#credit-card input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  word-spacing: 5px;
+}
+#credit-card input::-moz-placeholder { /* Firefox 19+ */
+  opacity: 1;
+  word-spacing: 5px;
+}
+#credit-card input:-ms-input-placeholder { /* IE 10+ */
+  word-spacing: 5px;
+}
+#credit-card input:-moz-placeholder { /* Firefox 18- */
+  opacity: 1;
+  word-spacing: 5px;
+}
+
+#credit-card input.step-finish:-moz-placeholder {
+  word-spacing: 95px;
+}
+
+#credit-card input.step-finish::-moz-placeholder {
+  word-spacing: 95px;
+}
+
+#credit-card input.step-finish::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  word-spacing: 95px;
+}
+
+#credit-card input.step-finish::-ms-input-placeholder { /* IE 10+ */
+  word-spacing: 95px;
+}
+
+#donate {
+	display: block;
+	margin-top: 6px;
+	height: 53px;
+	width: 121px;
+	background-color: #ae0d14;
+	color: #fff;
+	font-size: 18px;
+	font-size: 1.125rem;
+	border-radius: 5px;
+	box-shadow: 0px 2px 0px #f91b2a;
+	border: 1px solid;
+	border-bottom-color: #f91b2a;
+}
+
+#donate:hover{
+	cursor: pointer;
+}
+
+/* content end */
+
+#footer {
+	position: relative;	
+	background: url(../images/footer.jpg) no-repeat;
+}
+
+#footer:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	height: 1px;
+	border-top: 1px solid #cccccc;
+	width: 100%;
+}
+
+#social-media {
+	padding: 16px 52px 36px 0;
+	float: right;
+}
+
+div.circle {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-color: #a80c1e;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 36px;
+	cursor: pointer;
+}
+
+div.circle i {
+	color: #fff;
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+#dark {
+	background-color: #4c4d4f;
+	height: 164px;
+	clear: both;
+}
+
+@media screen and (max-width: 960px) {
+	#menu li {
+		padding: 0 20px;
+	}
+	#menu li a {
+		padding: 4px;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	#menu li {
+		padding: 0 18px;
+	}
+	#menu li a {
+		font-size: 15px;
+		font-size: .9375rem;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	#menu li {
+		padding: 0 16px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#menu li {
+		padding: 0 14px;
+	}
+	#menu li a {
+		padding: 3px;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	#menu li {
+		padding: 0 12px;
+	}
+	#menu li a {
+		padding: 3px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+    #mobile-menu {
+		display: block;
+	}
+	
+	#menu {
+		display: none;
+		text-align: center;
+		padding-left: 0;
+		width: 50%;
+		margin: 20px auto 0;
+	}
+	
+	#menu li {
+		display: block;
+		padding: 10px;
+	}
+	
+	#menu li:hover {
+		background-color: red;
+	}
+	
+	#low-bar {
+		padding-top: 44px;
+		padding-bottom: 28px;
+		padding-right: 0px;
+	}
+	
+	#personal-data > div.form-group:last-child{
+		margin-top: 0;
+	}
+	
+	#personal-data > div.form-group:first-child{
+		margin-top: 28px;
+	}
+	
+	div.form-group div.form-el {
+		display: block;
+		width: 100%;
+		margin: 10px 0 0;
+	}
+	
+	div.form-group div.form-el input {
+		width: 100%;
+	}
+	
+	#credit-card input.step-finish:-moz-placeholder {
+		word-spacing: 40px !important;
+	}
+
+	#credit-card input.step-finish::-moz-placeholder {
+		word-spacing: 40px !important;
+	}
+
+	#credit-card input.step-finish::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		word-spacing: 40px !important;
+	}
+
+	#credit-card input.step-finish::-ms-input-placeholder { /* IE 10+ */
+		word-spacing: 40px !important;
+	}
+	
+	#credit-card input.step-finish {
+		padding-left: 260px !important;
+	}
+	#filled {
+		word-spacing: 40px !important;
+		width: 360px !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#credit-card input.step-finish {
+		padding-left: 228px !important;
+	}
+	
+	#filled {
+		word-spacing: 30px !important;
+		width: 200px !important;
+		bottom: 58px;
+		left: 44px;
+	}
+}
+
+@media screen and (max-width: 560px) {
+
+#personal-data > div.form-group {
+	display: block
+}
+div.form-group div.form-el {
+		display: inline-block;
+		margin-left:auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	#menu {
+		display: block !important;
+	}
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SQUIZ DESIGN FORM</title>
+<!-- Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+<!-- FAVICON -->
+<link rel='shortcut icon' type='image/x-icon' href='images/favicon.png' />
+<!-- My Styles -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="media/css/style.css" rel="stylesheet" />
+<!--[if (gte IE 7)|(IE 9)]>
+<link href="media/css/rangeslider.css" rel="stylesheet" />
+<![endif]-->
+</head>
+<body>
+<div id="main-wrapper">
+	<div id="header">
+		<header>
+			<div id="top-bar">
+				<div id="search-block">
+					<form id="searchform" method="POST">
+					<div id="search-form">
+						<input id="search-box" type="search" placeholder="Search"/>
+					</div>
+					<div id="search">
+						<button type="button"><img src="media/images/search.png" alt="search" /></button>
+					</div>
+					</form>
+				</div>
+			</div>
+			<div id="low-bar">
+				<div id="logo">
+					<img src="media/images/logo.png" alt="logo" />
+				</div>
+				<nav>
+					<div id="mobile-menu">
+						<button><i class="fa fa-bars"></i></button>
+					</div>
+					<ul id="menu">
+						<li><a href="">About ASPI</a></li>
+						<li><a href="">Media Centre</a></li>
+						<li><a href="">Membership</a></li>
+						<li><a href="">Events</a></li>
+						<li><a href="">Publications</a></li>
+						<li><a href="">Research</a></li>
+					</ul>
+				</nav>
+				<div id="cart">
+					<img src="media/images/cart.png" alt="cart" />
+				</div>
+			</div>
+		</header>
+	</div>
+	<div id="content">
+		<form id="donate-form" method="POST">
+			<fieldset>
+				<legend><h1>Donate our course</h1></legend>
+				<p class="first"><span class="dolar">$0</span> can help us improve this product</p>
+				<div id="meter">
+					<div id="progress">
+						<span id="progress-bar" style="width: 0%"></span>
+					</div>
+					<input id="slide" type="range" value="0" min="0" max="100" />
+					 <output for="slide" id="volume">$0</output>
+				</div>
+				<input type="checkbox" name="check" />
+				<span class="first">Yes, I would like to donate this amount monthly</span>
+				<div id="personal-data">
+					<span class="bordered">2</span><span>Enter your information :</span>
+					<div class="form-group">
+						<div class="form-el">
+							<label for="full-name">Name</label>
+							<input id="full-name" class="no-pattern" type="text" name="fullnames" placeholder="First Last" required />
+							<p class="error">Please enter your name</p>
+						</div><!--
+						--><div class="form-el">
+							<label for="email-address">E-mail</label>
+							<input id="email-address" type="email" name="mail" placeholder="your@email.com" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required/>
+							<p class="error">Please enter a valid e-mail address</p>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-el">
+							<label for="address">Address</label>
+							<input id="address" class="no-pattern"  type="text" name="address" placeholder="123 Main St. Apt 2" 
+							pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required/>
+							<p class="error">Please enter your street address</p>
+						</div><!--
+						--><div class="form-el">
+							<label for="city">City, State</label>
+							<input id="city" type="text" name="city" placeholder="Pittsburgh, PA" 
+							pattern="/([\w\s]+),\s(\w+)/" required/>
+							<p class="error">Please enter your city and state, separated by comma</p>
+						</div>
+					</div>
+				</div>
+				<div id="credit-card">
+					<span class="bordered">3</span><span>Credit card info :</span>
+					<input id="initial" type="text" name="credit-card-nummber" placeholder="1234 5678 9012 3456"
+						pattern="^[0-9]{16}$" maxlength="16" autofocus />
+						<span id="filled"></span>
+					<p>Please enter your credit cart number</p>
+				</div>
+				<button id="donate" type="button">DONATE</button>
+			</fieldset>
+		</form>
+	</div>
+	<div id="footer">
+		<div id="social-media">
+			<div>
+				<div class="circle">
+					<i class="fa fa-twitter"></i>
+				</div>
+				<div class="circle">
+					<i class="fa fa-facebook"></i>
+				</div>
+				<div class="circle">
+					<i class="fa fa-youtube"></i>
+				</div>
+				<div class="circle">
+					<i class="fa fa-flickr"></i>
+				</div>
+				<div class="circle">
+					<i class="fa fa-envelope"></i>
+				</div>
+				<div class="circle">
+					<i class="fa fa-feed"></i>
+				</div>
+			</div>
+		</div>
+		<div id="dark">
+		</div>
+	</div>
+</div>
+<noscript>
+Your browser does not support JavaScript!
+<style type="text/css">
+#personal-data,#credit-card {
+	display: block;
+}
+</style>
+</noscript>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="media/js/script.js"></script>
+<!--[if (gte IE 7)|(IE 9)]>
+<script src="media/js/rangeslider.min.js"></script>
+<script src="media/js/ieexclusive.js"></script>
+<![endif]-->
+</body>
+</html>
