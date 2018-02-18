@@ -1,4 +1,4 @@
 # DonateApp
 Website with Donate input
 
-Here you can check demo: https://pwiniarski-squiz.github.io/DonateApp/
+Here you can check demo: https://pwiniarski1991.github.io/DonateApp/
